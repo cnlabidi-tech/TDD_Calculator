@@ -1,2 +1,2 @@
-def add():
+def add(n):
     return 0
