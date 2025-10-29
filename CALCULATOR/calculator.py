@@ -1,7 +1,5 @@
 def add(n):
- if n == "":
+ if not n:
     return 0
- if "," in n:
-     parts = n.split(",")
-     return int(parts[0]) + int(parts[1])
- return int(n)
+ parts = [int(x) for x in n.split(",")]
+ return  sum(parts)
